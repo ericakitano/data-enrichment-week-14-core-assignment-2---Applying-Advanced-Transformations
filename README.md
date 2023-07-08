@@ -52,7 +52,7 @@ Hint: There is a space in "100 kg" or "52.5 cm"
 
 ***
 
-![feedback](feedback.PNG)
+![png](feedback.png)
 
 Summary of Filenames:
 
