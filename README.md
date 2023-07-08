@@ -1,5 +1,33 @@
 # data enrichment week 14 core assignment 2 - Applying Advanced Transformations
  
+ 
+ 
+## Update:
+
+***
+
+![png](feedback.png)
+
+Summary of Filenames:
+
+* `Applying Advanced Transformations (Core).ipynb` - Original Submission (before feedback)
+* `(Fixed the Problem) Applying Advanced Transformations (Core).ipynb` - Retried for my own learning based on assignment feedback (after feedback)
+* `Folder: My Own Experiment` - I tried to switch the order of one-hot-encode vs dataframe merge, but it was not the issue.
+
+Notes: 
+
+> In the end, I found that the issue was that I needed to create a separate column "Powers_split" before exploding, in order to make `cols_to_make`.
+> 
+> I needed to differentiate when to use "Powers_split" and when to use "Powers".
+>
+> By NOT differentiating the exploded "Powers_split" vs original "Powers" in my original assignment submission, when I did the for loop to create new column, it created multiple rows for the same Hero. By differentiating the two, I only have one row per Hero.
+
+***
+ 
+ 
+ 
+ 
+ 
 ## The Data
 
 You will be working with a heavily modified version of the Superheroes dataset from Kaggle.
@@ -49,20 +77,4 @@ Hint: There is a space in "100 kg" or "52.5 cm"
 
 [(Source)](https://www.kaggle.com/datasets/claudiodavi/superhero-set)
 
-
-***
-
-![png](feedback.png)
-
-Summary of Filenames:
-
-* `Applying Advanced Transformations (Core).ipynb` - Original Submission (before feedback)
-* `(Fixed the Problem) Applying Advanced Transformations (Core).ipynb` - Retried for my own learning based on assignment feedback (after feedback)
-* `Folder: My Own Experiment` - I tried to switch the order of one-hot-encode vs dataframe merge, but it was not the issue.
-
-In the end, I found that the issue was that I needed to create a separate column "Powers_split" before exploding, in order to make `cols_to_make`.
-
-I needed to differentiate when to use "Powers_split" and when to use "Powers".
-
-By NOT differentiating the exploded "Powers_split" vs original "Powers" in my original assignment submission, when I did the for loop to create new column, it created multiple rows for the same Hero. By differentiating the two, I only have one row per Hero.
 
